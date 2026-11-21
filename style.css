@@ -1,0 +1,127 @@
+/* Page background and text */
+body {
+  background-color: #f4f1ea;
+  color: #222222;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1d3557;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #1d3557;
+  border-bottom: 3px solid #e76f51;
+  padding-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #1d3557;
+}
+
+/* Box model: padding, border, margin */
+header,
+section,
+footer {
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+/* Navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1d3557;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #e76f51;
+  color: #1d3557;
+}
+
+/* Flexbox: photo next to bio */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about img {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Things I Love list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #1d3557;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* Small screens: stack the photo on top of the bio */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
